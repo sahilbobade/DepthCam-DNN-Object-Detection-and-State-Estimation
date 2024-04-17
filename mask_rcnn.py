@@ -79,7 +79,7 @@ class MaskRCNN:
             cx, cy = obj_center
             depth_mm = depth_frame[cy, cx]
             cv2.rectangle(bgr_frame, (x, y), (x2, y2), color, 1)
-            print(class_id)
+            # print(class_id)
             class_name = self.classes[int(class_id)]
             cv2.putText(bgr_frame, class_name.capitalize(), (x + 5, y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 1)
             cv2.putText(bgr_frame, "{} cm".format(depth_mm / 10), (x + 5, y + 15), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color,
