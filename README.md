@@ -36,10 +36,43 @@ This project is developed using:
 Follow these instructions to set up and run the project:
 1. **Prerequisites**: Ensure you have the necessary hardware and software installed.
 2. **Installation**: Clone this repository and install the required dependencies listed in the `requirements.txt` file.
-3. **Running the Application**: Detailed steps on how to run the application and adjust settings for different environments (to be updated)
+3. **Running the Application**: Detailed steps on how to run the application are in below section.
+
+## Usage Instructions
+
+This project provides two methods for running the object detection and size estimation tasks using the Intel RealSense camera.
+
+### Method 1: Running Python Code (ROS not required)
+
+Follow these steps to run the object detection without ROS:
+
+1. **Connect the Intel RealSense Camera**: Ensure that the camera is connected to your computer.
+2. **Run the Python Script**: Execute the script by running the following command in your terminal:
+   ```
+   python Python_script.py
+   ```
+
+### Method 2: Running ROS Node
+
+If you are using ROS to run the application, follow these steps:
+
+1. **Launch Intel RealSense Node**: Start the RealSense camera node using the following command in your terminal:
+   ```
+   roslaunch realsense2_camera rs_camera.launch
+   ```
+2. **Connect the Intel RealSense Camera**: Ensure that the camera is connected to your computer.
+3. **Run the ROS Node**: Execute the ROS node by running:
+   ```
+   rosrun your_package_name ROS_Node.py
+   ```
+
+   Replace `your_package_name` with the name of your ROS package where `ROS_Node.py` is located.
+
+Ensure you have the necessary permissions to execute the scripts and that all dependencies are installed as per the `requirements.txt` and ROS setup documentation.
+
 
 ## Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. Please refer to the CONTRIBUTING.md for guidelines on how to proceed.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. Please contact us if you wish to contibute in this project.
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
