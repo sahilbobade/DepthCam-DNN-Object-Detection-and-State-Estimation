@@ -19,11 +19,24 @@ This project is developed using:
 - Libresense
 - OpenCV
 
+## Requirements
+
+### Hardware Requirements
+- Intel RealSense Camera
+
+### Software Requirements
+- Python (recommended version 3.8.10)
+- `pyrealsense2` for running Python scripts with Intel RealSense support
+- RealSense ROS wrapper for running ROS nodes
+- OpenCV (Python library): `opencv-python`
+- NumPy
+
+
 ## Getting Started
 Follow these instructions to set up and run the project:
-1. **Prerequisites**: Ensure you have the necessary hardware and software installed. This includes the Intel RealSense camera, Libresense, OpenCV, ROS.
-3. **Installation**: Clone this repository and install the required dependencies listed in the `requirements.txt` file.
-4. **Running the Application**: Detailed steps on how to run the application and adjust settings for different environments.
+1. **Prerequisites**: Ensure you have the necessary hardware and software installed.
+2. **Installation**: Clone this repository and install the required dependencies listed in the `requirements.txt` file.
+3. **Running the Application**: Detailed steps on how to run the application and adjust settings for different environments (to be updated)
 
 ## Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. Please refer to the CONTRIBUTING.md for guidelines on how to proceed.
