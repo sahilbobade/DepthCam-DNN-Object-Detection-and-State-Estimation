@@ -38,10 +38,6 @@ Follow these instructions to set up and run the project:
 2. **Installation**: Clone this repository and install the required dependencies listed in the `requirements.txt` file.
 3. **Running the Application**: Detailed steps on how to run the application are in below section.
 
-Here's how you can structure the instructions in your `README.md` to guide users on how to use the scripts for both methods:
-
----
-
 ## Usage Instructions
 
 This project provides two methods for running the object detection and size estimation tasks using the Intel RealSense camera.
