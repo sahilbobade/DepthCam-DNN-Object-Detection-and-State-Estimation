@@ -1,5 +1,4 @@
 # DepthCam-DNN-Object-Detection-and-State-Estimation
-Great! Here's a draft for your GitHub repository description:
 
 ---
 
