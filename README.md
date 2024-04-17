@@ -72,7 +72,7 @@ Ensure you have the necessary permissions to execute the scripts and that all de
 
 
 ## Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. Please refer to the CONTRIBUTING.md for guidelines on how to proceed.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. Please contact us if you wish to contibute in this project.
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
