@@ -6,8 +6,8 @@ import math
 class MaskRCNN:
     def __init__(self):
         # Loading Mask RCNN
-        self.net = cv2.dnn.readNetFromTensorflow("/home/sahil/catkin_ws/src/test/scripts/dnn/frozen_inference_graph_coco.pb",
-                                                 "/home/sahil/catkin_ws/src/test/scripts/dnn/mask_rcnn_inception_v2_coco_2018_01_28.pbtxt")
+        self.net = cv2.dnn.readNetFromTensorflow("dnn/frozen_inference_graph_coco.pb",
+                                                 "dnn/mask_rcnn_inception_v2_coco_2018_01_28.pbtxt")
         self.net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
         self.net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
         np.random.seed(2)
@@ -15,7 +15,7 @@ class MaskRCNN:
         self.detection_threshold = 0.7
         self.mask_threshold = 0.3
         self.classes = []
-        with open("/home/sahil/catkin_ws/src/test/scripts/dnn/classes.txt", "r") as file_object:
+        with open("dnn/classes.txt", "r") as file_object:
             for class_name in file_object.readlines():
                 self.classes.append(class_name.strip())
         self.obj_boxes = []
